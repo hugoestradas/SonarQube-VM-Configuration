@@ -36,7 +36,7 @@ read -p "Press ENTER key to continue." enter
 sudo vim /opt/sonar-scanner-4.2.0.1873-linux/conf/sonar-scanner.properties
 echo "In the file /etc/profile.d/sonar-scanner.sh add the following lines (copy and pasted them) as described below:"
 echo "#/bin/bash"
-echo "export PATH=$PATH:/opt/sonar-scanner-4.2.0.1873-linux/bin"
+echo 'export PATH="$PATH:/opt/sonar-scanner-4.2.0.1873-linux/bin"'
 read -p "Press ENTER key to continue." secondenter
 sudo vim /etc/profile.d/sonar-scanner.sh
 source /etc/profile.d/sonar-scanner.sh

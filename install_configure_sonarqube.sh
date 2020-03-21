@@ -1,4 +1,5 @@
 sudo apt-get update
+sudo apt-get install wget && sudo apt-get install unzip
 
 cat ./bitnami_credentials
 curl ifconfig.me
@@ -31,7 +32,7 @@ echo "© 2020 Conduent, Inc. All rights reserved."
 echo "In the file /opt/sonar-scanner*-linux/conf/sonar-scanner.properties
       add the following lines (copy and paste them) as described below:
         sonar.host.url=https://< localhost | ip of the VM >:9000
-        sonar.sourceEncoding=UTF-9"
+        sonar.sourceEncoding=UTF-8"
 read -p "Press ENTER key to continue." enter
 sudo vim /opt/sonar-scanner-4.2.0.1873-linux/conf/sonar-scanner.properties
 echo "In the file /etc/profile.d/sonar-scanner.sh add the following lines (copy and pasted them) as described below:"

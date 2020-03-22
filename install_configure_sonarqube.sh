@@ -25,7 +25,7 @@ echo "© 2020 Conduent, Inc. All rights reserved."
 echo "In the file /opt/sonar-scanner*-linux/conf/sonar-scanner.properties"
 echo "add the following lines (copy and paste them) as described below:"
 echo "sonar.host.url=https://localhost:9000"
-echo "sonar.sourceEncoding=UTF-9"
+echo "sonar.sourceEncoding=UTF-8"
 echo "sonar.web.host:<IP>"
 read -p "Press ENTER key to continue." enter
 sudo vim /opt/sonar-scanner-4.2.0.1873-linux/conf/sonar-scanner.properties

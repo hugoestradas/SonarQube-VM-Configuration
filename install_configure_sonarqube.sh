@@ -20,6 +20,7 @@ sudo unzip -d /opt/ sonar-scanner-cli*.zip
 rm -f *zip
 wget https://github.com/SonarSource/sonar-scanning-examples/archive/master.zip
 unzip master.zip
+mv sonar-scanning-examples-master/ sq-examples
 rm -f master.zip
 echo "© 2020 Conduent, Inc. All rights reserved."
 echo "In the file /opt/sonar-scanner*-linux/conf/sonar-scanner.properties"

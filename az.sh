@@ -4,3 +4,4 @@ az vm create --resource-group "poccodeanalysisrg" -n "vm" --image "Bitnami:sonar
 az vm open-port --port 22 --resource-group "poccodeanalysisrg" -n "vm" --priority 100
 az vm open-port --port 80 --resource-group "poccodeanalysisrg" -n "vm" --priority 101
 az vm open-port --port 900 --resource-group "poccodeanalysisrg" -n "vm" --priority 102
+az vm show -d -g "poccodeanalysisrg" -n "vm" --query "publicIps" -o tsv

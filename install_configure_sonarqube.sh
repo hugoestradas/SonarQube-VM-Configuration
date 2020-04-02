@@ -1,6 +1,5 @@
 sudo apt-get update
 sudo apt-get install wget && sudo apt-get install unzip
-cat ./bitnami_credentials
 curl ifconfig.me
 wget -q https://packages.microsoft.com/config/ubuntu/16.04/packages-microsoft-prod.deb -O packages-microsoft-prod.deb
 sudo dpkg -i packages-microsoft-prod.deb
@@ -37,4 +36,5 @@ read -p "Press ENTER key to continue." secondenter
 sudo vim /etc/profile.d/sonar-scanner.sh
 source /etc/profile.d/sonar-scanner.sh
 dotnet tool install --global dotnet-sonarscanner --version 4.7.1
+cat ./bitnami_credentials
 sudo reboot

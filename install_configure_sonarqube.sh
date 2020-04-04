@@ -35,6 +35,7 @@ echo 'export PATH="$PATH:/opt/sonar-scanner-4.2.0.1873-linux/bin"'
 read -p "Press ENTER key to continue." secondenter
 sudo vim /etc/profile.d/sonar-scanner.sh
 source /etc/profile.d/sonar-scanner.sh
+#dotnet tool install --global dotnet-sonarscanner
 dotnet tool install --global dotnet-sonarscanner --version 4.7.1
 cat ./bitnami_credentials
 sudo reboot
